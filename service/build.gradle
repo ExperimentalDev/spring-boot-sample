@@ -1,0 +1,6 @@
+bootRepackage.enabled = true
+bootRun.enabled = true
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
+}

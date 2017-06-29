@@ -1,0 +1,35 @@
+buildscript {
+    ext {
+        springBootVersion = "1.5.4.RELEASE"
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+    apply plugin: 'idea'
+    apply plugin: 'spring-boot'
+
+    group = 'org.expdev.sample'
+    version = '0.0.1'
+
+    repositories {
+        mavenCentral()
+    }
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    bootRepackage.enabled = false
+    bootRun.enabled = false
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.0'
+}
