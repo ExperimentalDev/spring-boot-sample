@@ -17,6 +17,7 @@ public class SampleController {
     }
 
     public static void main(String[] args) throws Exception {
+        String deadStore = "Test";
         SpringApplication.run(SampleController.class, args);
     }
 }
