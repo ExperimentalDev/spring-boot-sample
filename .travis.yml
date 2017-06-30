@@ -4,4 +4,4 @@ jdk:
   - oraclejdk8
 
 script:
-  - ./gradlew check -i --continue
+  - ./gradlew check jacocoTestReport -i --continue
