@@ -14,4 +14,10 @@ public class SampleController {
     String home() {
         return "Hello World!";
     }
+
+    public String currentDateString() {
+        StringBuffer sb = new StringBuffer();
+        sb.append("a");		 // avoid this
+        return sb.toString();
+    }
 }
