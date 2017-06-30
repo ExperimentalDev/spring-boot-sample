@@ -34,7 +34,7 @@ subprojects {
     }
 
     dependencies {
-        codacy group: 'com.codacy', name: 'codacy-coverage-reporter', version: '1.0.7'
+        codacy group: 'com.codacy', name: 'codacy-coverage-reporter', version: '2.0.0'
         testCompile "junit:junit:${junitVersion}"
     }
 
