@@ -1,7 +1,14 @@
 language: java
+sudo: false # faster builds
 
 jdk:
   - oraclejdk8
+
+before_install:
+  - pip install --user codecov
+
+after_success:
+  - codecov
 
 script:
   - ./gradlew check jacocoTestReport uploadCoverageToCodacy -i --continue
