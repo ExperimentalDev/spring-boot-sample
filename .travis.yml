@@ -4,4 +4,4 @@ jdk:
   - oraclejdk8
 
 script:
-  - ./gradlew check jacocoTestReport -i --continue
+  - ./gradlew check jacocoTestReport uploadCoverageToCodacy -i --continue
