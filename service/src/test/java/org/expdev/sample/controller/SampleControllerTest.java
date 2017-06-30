@@ -1,5 +1,6 @@
 package org.expdev.sample.controller;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -12,5 +13,10 @@ public class SampleControllerTest {
     @Test
     public void testHello() {
         controller.home();
+    }
+
+    @Test
+    public void testIsThisTrue() {
+        Assert.assertFalse(controller.isThisTrue(""));
     }
 }
